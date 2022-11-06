@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+ }
+  body{
+    font-family: cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+ }
+ #myChartContainer{
+    width: 1000px;
+ } 
+ .continentBtnContainer{
+    padding: 5px;
+    margin-top: 10px;
+ }
+ .citeisBtns{
+    padding: 2px;
+    margin: 3px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    border: solid 1px black;
+    border-radius: 7px;
+    width: fit-content;
+    height: fit-content;
+ }
+ .City{
+    font-size: 0.7rem;
+ }
+ .CityYo{
+    display: flex;
+    justify-content: center;
+    width: calc(100% - 20px);
+ }
+ .title{
+    margin: 20px;
+    font-size: 35px;
+ }
+ .srce{
+    display: none;
+ }
+ @media (max-width: 1000px) {
+    #myChartContainer{
+       width: 600px;
+    } 
+    .CityYo{
+       width: calc(100% - 230px);
+    }
+  }
+  @media (max-width: 600px) {
+    #myChartContainer{
+       width: 400px;
+    } 
+    .CityYo{
+       width: calc(100% - 230px);
+    }
+  }
+  @media (max-width: 600px) {
+    #myChartContainer{
+       display: none;
+    } 
+    .CityYo{
+       display: none;
+    }
+    .continentBtnContainer{ 
+        display: none;
+    }
+    .myChartContainer{
+       display: none;
+    } 
+    .srce{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        padding: 20px;
+    }
+    .srce h1{
+        text-align: center;
+        font-size: 50px;
+    }
+  }
